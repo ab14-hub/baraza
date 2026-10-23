@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Baraza Coffee – Specialty coffee house, Lahore</title>
+<meta name="description" content="Baraza Coffee is a specialty coffee house in Gulberg, Lahore. Single-origin pour overs, hand-made lattes, kitchen and bakes, open 24/7. Visit or call to order.">
+<meta property="og:title" content="Baraza Coffee – Specialty coffee house, Lahore">
+<meta property="og:description" content="Single-origin beans, crafted by hand and served with soul. Open 24/7 in Gulberg, Lahore.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23120d0a'/%3E%3Ctext x='50' y='72' font-size='64' text-anchor='middle'%3E%E2%98%95%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--deep:#120d0a;--green:#1e1612;--green2:#2a2019;--cream:#f3e6d3;--yellow:#d4a95a;--lime:#c8714b;--orange:#e08a5b;--bean:#4a2113;--ink:#120d0a;--text:#f3e6d3}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--deep);color:var(--text);font-family:"DM Sans",system-ui,sans-serif;line-height:1.55}
+h1,h2,h3,.fd{font-family:Fredoka,"Trebuchet MS",sans-serif;font-weight:700;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+.track{height:190svh;position:relative}
+.hero{position:sticky;top:0;height:100svh;padding:12px;display:flex;flex-direction:column;gap:12px;background:var(--cream)}
+.nav{display:flex;align-items:center;gap:18px;background:#fff4e3;border-radius:999px;padding:8px 10px 8px 22px;color:var(--ink)}
+.brand{font:700 22px Fredoka,sans-serif;display:flex;align-items:baseline;gap:8px;text-decoration:none}
+.brand small{font-size:15px;color:#c9971b}
+.nav ul{display:flex;gap:6px;list-style:none;margin:0 auto;padding:0}
+.nav li a{display:block;padding:8px 18px;border-radius:999px;text-decoration:none;font-weight:700;font-size:14px;background:#fff;border:1px solid #ead7bd}
+.nav li a:hover{background:var(--green);color:#fff}
+.cart{position:relative;width:42px;height:42px;border-radius:50%;background:var(--green);display:grid;place-items:center;border:0;color:#fff;cursor:pointer}
+.cart b{position:absolute;top:-4px;right:-4px;min-width:20px;height:20px;border-radius:10px;background:var(--yellow);color:var(--ink);font-size:12px;display:none;place-items:center;padding:0 5px}
+.grid{flex:1;min-height:0;display:grid;grid-template-columns:1.8fr 1fr;gap:12px}
+.panel{position:relative;overflow:hidden;border-radius:34px;background:var(--green)}
+.panel h1{position:absolute;z-index:2;left:clamp(22px,4vw,56px);top:clamp(20px,4.5vh,50px);font-size:clamp(46px,7.2vw,118px);line-height:.95;letter-spacing:-.01em;color:#fff7ea;text-shadow:0 5px 0 rgba(0,0,0,.18)}
+.bean{position:absolute;z-index:1;width:clamp(56px,7vw,100px);filter:drop-shadow(8px 12px 10px rgba(0,0,0,.35))}
+.b1{left:clamp(20px,5vw,70px);top:46%;transform:rotate(-28deg)}
+.b2{right:5%;top:1%;width:clamp(44px,5vw,70px);transform:rotate(40deg)}
+.sub{position:absolute;z-index:2;left:clamp(22px,4vw,56px);bottom:92px;max-width:290px;font-size:15px;color:#d8c7b0}
+.hint{position:absolute;z-index:2;left:clamp(22px,4vw,56px);bottom:26px;display:flex;align-items:center;gap:12px;font-weight:700;font-size:14px;color:var(--yellow)}
+.hint i{display:block;width:2px;height:30px;background:var(--yellow);animation:nudge 1.6s ease-in-out infinite}
+@keyframes nudge{50%{transform:translateY(7px)}}
+.badge{position:absolute;z-index:2;right:26px;bottom:24px;display:flex;align-items:center;gap:10px;font-size:15px}
+.badge b{background:var(--lime);color:var(--ink);padding:5px 14px;border-radius:999px;font:700 15px Fredoka,sans-serif}
+.side{display:grid;grid-template-rows:1fr 1fr;gap:12px;min-height:0}
+.card{position:relative;border-radius:34px;padding:22px 24px;color:var(--ink);overflow:hidden;display:flex;flex-direction:column;align-items:center;text-align:center}
+.card h2{font-size:clamp(26px,2.6vw,38px)}
+.card.y{background:var(--yellow)}.card.l{background:var(--lime)}
+.card svg{height:min(26vh,210px);width:auto;margin:auto 0;filter:drop-shadow(0 12px 8px rgba(0,0,0,.16))}
+.price{position:absolute;right:20px;top:70px;background:#fff4e3;border-radius:50%;width:76px;height:76px;display:grid;place-items:center;font:700 15px/1.1 Fredoka,sans-serif;transform:rotate(10deg)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:#fff4e3;color:var(--ink);border-radius:999px;padding:9px 20px;font:700 15px Fredoka,sans-serif;text-decoration:none;border:0;cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:var(--green);color:#fff}
+.btn.dark{background:var(--green);color:#fff}.btn.dark:hover{background:var(--yellow);color:var(--ink)}
+/* machine scene */
+.scene{position:absolute;right:3%;bottom:0;width:min(36%,430px);height:76%;min-width:260px}
+.machine{position:absolute;left:8%;width:84%;top:2%;height:42%;border-radius:22px 22px 12px 12px;background:linear-gradient(90deg,#0f1110,#5a5852 8%,#2a2a27 20%,#161716 55%,#0f1110 75%,#4b4943 92%,#191918);box-shadow:inset 3px 0 5px #fff3,inset -5px 0 8px #0009,0 6px 0 #0006}
+.machine::before{content:"";position:absolute;left:8%;right:8%;top:8%;height:36%;border-radius:10px;background:linear-gradient(135deg,#55534e,#191918 55%,#373530);box-shadow:inset 0 2px 4px #fff3}
+.display{position:absolute;z-index:2;top:15%;left:30%;width:40%;height:19%;border:2px solid #5c5a54;border-radius:5px;background:#1a120d;display:grid;place-items:center;font:700 clamp(8px,1vw,12px) Fredoka,sans-serif;color:var(--lime);letter-spacing:.05em}
+.dots{position:absolute;z-index:2;top:58%;right:12%;display:flex;gap:6px}
+.dots i{width:9px;height:9px;border-radius:50%;background:var(--yellow);box-shadow:0 0 6px #f2c23088}
+.dots i:nth-child(2){background:var(--lime)}.dots i:nth-child(3){background:var(--orange)}
+.group{position:absolute;z-index:3;left:34%;width:32%;bottom:-4px;height:30px;border-radius:6px 6px 10px 10px;background:linear-gradient(90deg,#171716,#7a766c 28%,#252422 65%,#111)}
+.nozzle{position:absolute;z-index:4;left:calc(50% - 4px);top:100%;width:8px;height:22px;border-radius:0 0 4px 4px;background:linear-gradient(90deg,#111,#9b9488,#222)}
+.drip{position:absolute;z-index:2;width:6px;height:0;opacity:0;border-radius:3px 3px 4px 4px;background:linear-gradient(90deg,#1c0905,#6a3118 30%,#9a5a30 50%,#4c1e0e 75%,#210b05)}
+.cup-wrap{position:absolute;z-index:3;left:27%;width:46%;height:22%;bottom:4%}
+.saucer{position:absolute;bottom:-9%;left:-8%;width:116%;height:20%;border-radius:50%;background:linear-gradient(#fff7e9,#cdb99f);box-shadow:0 10px 14px #0005}
+.cup{position:absolute;left:0;top:0;width:86%;height:100%;overflow:hidden;border-radius:6px 6px 40% 40%;background:linear-gradient(90deg,#d6c9b7,#fff8eb 20%,#f4e8d7 55%,#c6b5a1)}
+.rim{position:absolute;z-index:4;left:-2%;top:-7px;width:90%;height:16px;border-radius:50%;border:4px solid #e4d4bd;background:#33180e}
+.coffee{position:absolute;bottom:0;left:0;width:100%;height:0;background:linear-gradient(90deg,#291008,#68351c 35%,#3a190d 76%,#211009)}
+.coffee::before{content:"";position:absolute;top:-5px;left:-2%;width:104%;height:11px;border-radius:50%;background:radial-gradient(ellipse at 50% 35%,#c08555,#6a351d 45%,#2c1008 80%);animation:crema 1.8s ease-in-out infinite}
+@keyframes crema{50%{transform:scaleX(1.03);filter:brightness(1.15)}}
+.klogo{position:absolute;z-index:3;left:0;top:34%;width:100%;text-align:center;letter-spacing:.1em;font:700 clamp(8px,1vw,13px) Fredoka;color:#1b1410}
+.handle{position:absolute;right:-2%;top:20%;width:24%;height:52%;border:9px solid #e4d4bd;border-left:0;border-radius:0 30px 30px 0}
+/* sections */
+.page{position:relative;z-index:2;background:var(--deep)}
+section{padding:clamp(56px,9vw,120px) clamp(18px,5vw,72px)}
+.wrap{max-width:1180px;margin:0 auto}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:56px}
+.head h2{font-size:clamp(34px,5vw,64px);line-height:1;max-width:620px}
+.head p{max-width:360px;margin:12px 0 0;color:#bfae98}
+.tog{display:inline-flex;background:var(--green);border-radius:999px;padding:5px}
+.tog button{border:0;background:none;color:var(--text);font:600 16px Fredoka;padding:9px 22px;border-radius:999px;cursor:pointer}
+.tog button[aria-pressed=true]{background:var(--yellow);color:var(--ink)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;padding-top:90px}
+.item{position:relative;background:var(--green);border-radius:30px;padding:0 22px 22px;text-align:center}
+.item svg{width:128px;height:auto;margin-top:-84px;filter:drop-shadow(0 14px 10px rgba(0,0,0,.35))}
+.item h3{font-size:26px;margin-top:6px}
+.item p{margin:6px 0 18px;color:#bfae98;font-size:14px;min-height:44px}
+.row{display:flex;align-items:center;justify-content:space-between}
+.row .fd{font-size:24px;color:var(--yellow)}
+.add{width:42px;height:42px;border-radius:50%;border:0;background:var(--lime);color:var(--ink);font:700 26px/1 Fredoka;cursor:pointer;transition:transform .2s}
+.add:active{transform:scale(.85)}
+.add.sm{width:34px;height:34px;font-size:20px}
+.list .add{background:var(--green);color:#fff}
+.list td:last-child{padding-left:12px}
+.list{margin-top:56px;background:var(--cream);color:var(--ink);border-radius:34px;padding:clamp(24px,4vw,48px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,72px)}
+.list h3{font-size:28px;margin-bottom:10px}
+.list table{width:100%;border-collapse:collapse}
+.list th{font:600 14px Fredoka;text-align:right;color:#7b6a55;padding-bottom:6px}
+.list th:first-child{text-align:left}
+.list td{padding:10px 0;border-top:1px dashed #d4b998;font-weight:500}
+.list td+td{text-align:right;font-family:Fredoka;font-weight:600;white-space:nowrap;padding-left:14px}
+.why{background:var(--green)}
+.why .wrap{display:grid;grid-template-columns:1fr auto 1fr;gap:clamp(20px,5vw,70px);align-items:center}
+.why h2{font-size:clamp(34px,5vw,62px);grid-column:1/-1;text-align:center;line-height:1.02;margin-bottom:24px}
+.col{display:grid;gap:44px}
+.f h3{font-size:24px;color:var(--yellow)}.f p{margin:6px 0 0;color:#d8c7b0;font-size:15px;max-width:320px}
+.col:last-child .f{text-align:right;margin-left:auto}
+.why svg.big{width:clamp(140px,19vw,230px);height:auto;filter:drop-shadow(0 18px 14px rgba(0,0,0,.4))}
+.visit .box{background:var(--yellow);color:var(--ink);border-radius:40px;padding:clamp(28px,5vw,64px);display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center}
+.visit h2{font-size:clamp(34px,5vw,64px);line-height:1}
+.visit address{font-style:normal;font-weight:500;font-size:18px;display:grid;gap:12px}
+.visit .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+footer{padding:28px;text-align:center;color:#9c8a76;font-size:14px}
+@media(max-width:860px){
+ .track{height:170svh}
+ .nav ul{display:none}.nav{justify-content:space-between}
+ .grid{grid-template-columns:1fr}.side{display:none}
+ .panel{border-radius:28px}
+ .panel h1{font-size:clamp(44px,15vw,76px)}
+ .b1{left:auto;right:7%;top:2%;width:56px}.b2{display:none}
+ .sub{display:none}.badge{display:none}
+ .scene{right:50%;transform:translateX(50%);width:min(86%,380px);height:66%}
+ .cards,.list,.visit .box{grid-template-columns:1fr}
+ .cards{gap:96px}
+ .why .wrap{grid-template-columns:1fr}.why svg.big{margin:0 auto;order:-1}.col:last-child .f{text-align:left;margin:0}
+}
+@media(prefers-reduced-motion:reduce){.coffee::before,.hint i{animation:none}}
+.panel{box-shadow:inset 0 0 0 1px #d4a95a55}
+.panel::before{content:"";position:absolute;inset:0;opacity:.14;pointer-events:none;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence baseFrequency='.9' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.panel{background:radial-gradient(ellipse at 70% 70%,#2d211a,#1e1612 65%)}
+.ticker{overflow:hidden;border-block:1px solid #d4a95a44;padding:18px 0;background:var(--deep)}
+.tk{display:flex;gap:36px;width:max-content;white-space:nowrap;animation:tk 30s linear infinite;font:600 22px Fredoka;color:var(--yellow)}
+.tk i{font-style:normal;color:var(--lime)}
+@keyframes tk{to{transform:translateX(-50%)}}
+.item{border:1px solid #d4a95a30;transition:transform .35s,border-color .35s}.item:hover{transform:translateY(-6px);border-color:#d4a95a99}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}.item.rv.in:hover{transform:translateY(-6px)}
+@media(prefers-reduced-motion:reduce){.tk{animation:none}.rv{opacity:1;transform:none;transition:none}}
+.about .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(24px,4vw,64px);align-items:start}
+.about h2{font-size:clamp(34px,4.6vw,58px);line-height:1.02}
+.lead{color:#d8c7b0;max-width:520px;margin:18px 0 28px}
+.revs{display:grid;gap:16px}
+.rev{margin:0;background:var(--green);border:1px solid #d4a95a30;border-radius:26px;padding:22px 24px}
+.stars{color:var(--yellow);letter-spacing:.2em;font-size:15px}
+.rev blockquote{margin:8px 0;font:600 clamp(20px,2.2vw,26px)/1.25 Fredoka,sans-serif}
+.rev figcaption{font-size:14px;color:#9c8a76}
+.loc{background:var(--cream);color:var(--ink);border-radius:34px;overflow:hidden}
+.loc svg{display:block;width:100%;height:auto}
+.locb{padding:24px 28px 28px}
+.locb h3{font-size:28px}
+.locb p{margin:8px 0 18px;line-height:1.7}
+@media(max-width:860px){.about .wrap{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="cup" viewBox="0 0 100 135">
+  <rect x="14" y="5" width="72" height="16" rx="7" fill="#222"/><rect x="9" y="17" width="82" height="9" rx="4.5" fill="#2e2e2e"/>
+  <path d="M15 26h70l-8 104a5 5 0 0 1-5 5H28a5 5 0 0 1-5-5z" fill="var(--body,#fff3e0)"/>
+  <path d="M17.5 55h65l-2.4 34H19.9z" fill="var(--sleeve,#1d3a36)"/>
+  <path d="M21 26h14l-7 104h-5z" fill="#fff" opacity=".35"/>
+  <rect x="38" y="64" width="24" height="16" rx="4" fill="none" stroke="var(--sleeve-ink,#fbe3c8)" stroke-width="2.5"/><circle cx="50" cy="72" r="3" fill="var(--sleeve-ink,#fbe3c8)"/>
+ </symbol>
+ <symbol id="bean" viewBox="0 0 100 150">
+  <ellipse cx="50" cy="75" rx="42" ry="68" fill="url(#bg)"/><path d="M50 10c-18 30 20 50 0 70s16 40 0 62" fill="none" stroke="#1b0a04" stroke-width="7" stroke-linecap="round"/>
+  <ellipse cx="34" cy="45" rx="9" ry="22" fill="#fff" opacity=".12"/>
+ </symbol>
+ <symbol id="glass" viewBox="0 0 120 145"><clipPath id="gc"><path d="M24 30H86L80 118Q79 126 70 126H40Q31 126 30 118Z"/></clipPath><ellipse cx="55" cy="132" rx="50" ry="9" fill="#e9f2ee"/><ellipse cx="55" cy="130" rx="42" ry="6" fill="#c9d9d2"/><path d="M86 46q24 0 22 26-2 24-24 24" fill="none" stroke="#e9f2ee" stroke-width="7" stroke-linecap="round"/><path d="M24 30H86L80 118Q79 126 70 126H40Q31 126 30 118Z" fill="#ffffff22"/><g clip-path="url(#gc)"><rect x="20" y="88" width="70" height="40" fill="var(--c1)"/><rect x="20" y="60" width="70" height="30" fill="var(--c2)"/><rect x="20" y="38" width="70" height="24" fill="var(--c3)"/><ellipse cx="55" cy="38" rx="32" ry="8" fill="var(--foam)"/><path d="M30 36h8l-3 80h-4z" fill="#fff" opacity=".3"/></g><path d="M24 30H86L80 118Q79 126 70 126H40Q31 126 30 118Z" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2.5"/></symbol>
+ <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#8a4a2a"/><stop offset=".55" stop-color="#4a2113"/><stop offset="1" stop-color="#2a0f07"/></linearGradient>
+</svg>
+
+<div class="track" id="track">
+<header class="hero" id="top">
+ <nav class="nav" aria-label="Main">
+  <a class="brand" href="#top">Baraza <small>Coffee · Est. 2019</small></a>
+  <ul><li><a href="#menu">Menu</a></li><li><a href="#about">About</a></li><li><a href="#why">Why Baraza</a></li><li><a href="#visit">Visit</a></li></ul>
+  <button class="cart" id="cart" aria-label="Cart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 8h14l-1 12H6zM9 8a3 3 0 0 1 6 0"/></svg><b id="count">0</b></button>
+ </nav>
+ <div class="grid">
+  <div class="panel">
+   <h1>Served<br>with soul.</h1>
+   <svg class="bean b1" viewBox="0 0 100 150"><use href="#bean"/></svg>
+   <svg class="bean b2" viewBox="0 0 100 150"><use href="#bean"/></svg>
+   <p class="sub">Specialty coffee, crafted by hand and served with soul. Scroll and watch a fresh cup fill.</p>
+   <div class="hint"><i></i>Scroll to pour</div>
+   
+   <div class="scene" id="scene" role="img" aria-label="Espresso machine pouring coffee into a cup as you scroll">
+    <div class="machine" id="machine">
+     <div class="display">92° READY</div><div class="dots"><i></i><i></i><i></i></div>
+     <div class="group"></div><div class="nozzle"></div>
+    </div>
+    <div class="drip" id="drip"></div>
+    <div class="cup-wrap" id="cupwrap">
+     <div class="saucer"></div>
+     <div class="cup"><div class="coffee" id="coffee"></div><div class="klogo">BARAZA</div></div>
+     <div class="rim"></div><div class="handle"></div>
+    </div>
+   </div>
+  </div>
+  <div class="side">
+   <div class="card y"><h2>Top picks</h2>
+    <svg viewBox="0 0 100 135" style="--body:#fff3e0;--sleeve:#1e1612;--sleeve-ink:#d4a95a"><use href="#cup"/></svg>
+    <span class="price">Rs<br>999</span>
+    <a class="btn" href="#menu">Explore</a></div>
+   <div class="card l"><h2>Slow bar</h2>
+    <svg viewBox="0 0 100 135" style="--body:#f3e6d3;--sleeve:#c8714b;--sleeve-ink:#fff"><use href="#cup"/></svg>
+    <span class="price">from<br>Rs 1,199</span>
+    <a class="btn" href="#menu">Explore</a></div>
+  </div>
+ </div>
+</header>
+</div>
+
+<main class="page">
+<section id="menu"><div class="wrap">
+ <div class="head"><div><h2>Brewed slow. Poured with care.</h2><p>Signature lattes and hand-made brews from the slow bar. Prices in PKR.</p></div></div>
+ <div class="cards">
+ <article class="item"><svg viewBox="0 0 120 145" style="--c1:#3a2315;--c2:#b9885a;--c3:#e5cda8;--foam:#f6ead6"><use href="#glass"/><path d="M36 36q9 5 18 0t18 0" fill="none" stroke="#7a4a1c" stroke-width="2" stroke-linecap="round"/></svg><h3>Hazelnut Latte</h3><p>Smooth espresso and steamed milk with a toasty hazelnut finish.</p><div class="row"><span class="fd">Rs 849</span><button class="add" aria-label="Add Hazelnut Latte">+</button></div></article>
+ <article class="item"><svg viewBox="0 0 120 145" style="--c1:#7a4a1c;--c2:#d79a45;--c3:#efd39a;--foam:#fbf0d6"><use href="#glass"/><path d="M33 36q7 6 14 0t14 0t14 0" fill="none" stroke="#c8892f" stroke-width="2.6" stroke-linecap="round"/></svg><h3>Butterscotch Latte</h3><p>Rich coffee, silky milk and a buttery caramel sweetness.</p><div class="row"><span class="fd">Rs 999</span><button class="add" aria-label="Add Butterscotch Latte">+</button></div></article>
+ <article class="item"><svg viewBox="0 0 120 145" style="--c1:#2b1710;--c2:#6b3a1f;--c3:#b57a45;--foam:#d8b48a"><use href="#glass"/><rect x="36" y="46" width="15" height="15" rx="3" fill="#fff" opacity=".38" transform="rotate(-12 43 53)"/><rect x="56" y="52" width="14" height="14" rx="3" fill="#fff" opacity=".3" transform="rotate(10 63 59)"/></svg><h3>Iced Chemex</h3><p>Clean, aromatic pour over brewed through a Chemex and served over ice.</p><div class="row"><span class="fd">Rs 1,499</span><button class="add" aria-label="Add Iced Chemex">+</button></div></article>
+ </div>
+ <div class="list">
+  <div><h3>Pour overs</h3><table><thead><tr><th>Method</th><th>Rs</th></tr></thead><tbody><tr><td>Press pot, hot</td><td>1,199</td></tr><tr><td>Clever dripper, hot</td><td>1,249</td></tr><tr><td>AeroPress, iced</td><td>1,299</td></tr><tr><td>Manual dripper, iced</td><td>1,349</td></tr><tr><td>Pour over, hot</td><td>1,399</td></tr><tr><td>Chemex, iced</td><td>1,499</td></tr></tbody></table></div>
+  <div><h3>Lattes</h3><table><thead><tr><th>Drink</th><th>Rs</th></tr></thead><tbody><tr><td>Hazelnut Latte</td><td>849</td></tr><tr><td>Butterscotch Latte</td><td>999</td></tr></tbody></table><h3 style="margin-top:28px">From the kitchen</h3><table><tbody><tr><td>Butter Scramble Burger</td><td>799</td></tr><tr><td>Chargrilled Chicken Burger</td><td>1,299</td></tr><tr><td>Crunch Club Chicken Burger</td><td>1,299</td></tr></tbody></table><p style="margin:16px 0 0;font-size:14px;color:#7b6a55">Prices taken from online listings. Please confirm in store.</p></div>
+ </div>
+</div></section>
+<div class="ticker" aria-hidden="true"><div class="tk"><span>Open 24/7</span><i>✦</i><span>Largest slow bar</span><i>✦</i><span>Single-origin beans</span><i>✦</i><span>Specialty coffee, kitchen &amp; bakes</span><i>✦</i><span>Open 24/7</span><i>✦</i><span>Largest slow bar</span><i>✦</i><span>Single-origin beans</span><i>✦</i><span>Specialty coffee, kitchen &amp; bakes</span><i>✦</i></div></div>
+
+<section class="about" id="about"><div class="wrap">
+ <div>
+  <h2>Born in Lahore.<br>Brewed with obsession.</h2>
+  <p class="lead">Founded in 2019, Baraza Coffee is a specialty coffee house built on one belief: coffee is an art form. Single-origin beans, a slow bar for manual brews, a kitchen and fresh bakes, open around the clock.</p>
+  <div class="revs">
+   <figure class="rev"><div class="stars" aria-label="5 stars">★★★★★</div><blockquote>“Hands down the best specialty coffee in Lahore.”</blockquote><figcaption>Guest review</figcaption></figure>
+   <figure class="rev"><div class="stars" aria-label="5 stars">★★★★★</div><blockquote>“You can tell the team genuinely loves coffee.”</blockquote><figcaption>Guest review</figcaption></figure>
+  </div>
+ </div>
+ <div class="loc">
+  <svg viewBox="0 0 400 230" role="img" aria-label="Stylised map of Gulberg, Lahore"><rect width="400" height="230" fill="#e6d3b4"/><rect x="250" y="20" width="120" height="70" rx="10" fill="#c9d3a4"/><g fill="none" stroke="#f8eedd" stroke-linecap="round"><path d="M-10 150H410" stroke-width="16"/><path d="M150 -10V240" stroke-width="12"/><path d="M-10 60L410 110" stroke-width="8"/><path d="M290 110V240" stroke-width="7"/><path d="M40 -10V150" stroke-width="6"/></g><g transform="translate(150 128)"><ellipse cx="0" cy="26" rx="14" ry="5" fill="#0003"/><path d="M0 26C-24 -4-22 -30 0-30S24 -4 0 26z" fill="#d4a95a" stroke="#1e1612" stroke-width="3"/><circle cy="-12" r="7" fill="#1e1612"/></g><text x="168" y="130" font-family="Fredoka,sans-serif" font-weight="700" font-size="16" fill="#1e1612">Baraza</text><text x="20" y="212" font-family="DM Sans,sans-serif" font-size="13" fill="#6b5a45">Gulberg, Lahore</text></svg>
+  <div class="locb">
+   <h3>Visit us in Gulberg</h3>
+   <p>Gulberg, Lahore, Pakistan<br>Open 24 hours, 7 days a week<br><a href="tel:+923364337172">+92 336 433 7172</a></p>
+   <a class="btn dark" href="https://www.google.com/maps/search/?api=1&query=Baraza+Coffee+Gulberg+Lahore" target="_blank" rel="noopener">Get directions</a>
+  </div>
+ </div>
+</div></section>
+
+<section class="why" id="why"><div class="wrap">
+ <h2>Why Baraza feels different</h2>
+ <div class="col"><div class="f"><h3>Largest slow bar</h3><p>Press pots, drippers, AeroPress and Chemex, all brewed by hand.</p></div><div class="f"><h3>Single-origin beans</h3><p>Specialty coffee with clean, aromatic character in every cup.</p></div></div>
+ <svg class="big" viewBox="0 0 100 135" style="--body:#fff3e0;--sleeve:#1e1612;--sleeve-ink:#d4a95a"><use href="#cup"/></svg>
+ <div class="col"><div class="f"><h3>Open 24/7</h3><p>A specialty coffee experience that never closes, day or night.</p></div><div class="f"><h3>Kitchen &amp; bakes</h3><p>Burgers, breakfast and fresh bakes to go with your brew.</p></div></div>
+</div></section>
+
+<section class="visit" id="visit"><div class="wrap"><div class="box">
+ <div><h2>Come say hi.<br>We’re always open.</h2></div>
+ <address>
+  <span>Gulberg, Lahore, Pakistan</span>
+  <a href="tel:+923364337172"><strong>+92 336 433 7172</strong></a>
+  <a href="mailto:Info@barazacoffee.com">Info@barazacoffee.com</a>
+  <span class="btns"><a class="btn dark" href="https://barazacoffee.com/" target="_blank" rel="noopener">barazacoffee.com</a><a class="btn" style="background:#fff4e3" href="tel:+923364337172">Call to order</a></span>
+ </address>
+</div></div></section>
+<footer>© 2026 Baraza Coffee · Specialty coffee, Lahore</footer>
+</main>
+
+<script>
+(()=>{
+ const $=id=>document.getElementById(id),track=$('track'),drip=$('drip'),coffee=$('coffee'),scene=$('scene'),machine=$('machine'),cupWrap=$('cupwrap');
+ const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+ const ease=v=>v<.5?4*v*v*v:1-Math.pow(-2*v+2,3)/2;
+ const rm=matchMedia('(prefers-reduced-motion: reduce)');
+ function update(){
+  const range=Math.max(1,track.offsetHeight-innerHeight);
+  const prog=clamp(-track.getBoundingClientRect().top/range,0,1);
+  const p=rm.matches?prog:ease(prog);
+  const s=scene.getBoundingClientRect(),m=machine.getBoundingClientRect(),c=cupWrap.getBoundingClientRect();
+  const x=m.left+m.width/2-s.left,y0=m.bottom+22-s.top,y1=c.top-s.top+6;
+  const sp=clamp((p-.12)/.3,0,1);
+  drip.style.left=(x-3)+'px';drip.style.top=y0+'px';
+  drip.style.height=Math.max(0,y1-y0)*sp+'px';
+  drip.style.opacity=clamp((p-.1)/.1,0,1);
+  coffee.style.height=clamp((p-.25)/.6,0,1)*72+'%';
+  const pour=clamp((p-.16)/.15,0,1)*(1-clamp((p-.88)/.1,0,1));
+  machine.style.transform=rm.matches?'':`translateY(${Math.sin(p*70)*pour*.8}px)`;
+ }
+ addEventListener('scroll',update,{passive:true});addEventListener('resize',update);update();
+ // hot / cold
+ document.querySelectorAll('.tog button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.tog button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+  document.querySelectorAll('.price-v').forEach(e=>e.textContent='Rs '+e.dataset[b.dataset.m]);
+ }));
+ // cart
+ document.querySelectorAll('.list thead tr').forEach(r=>r.insertAdjacentHTML('beforeend','<th></th>'));
+ document.querySelectorAll('.list tbody tr').forEach(r=>{const t=r.firstElementChild.textContent;r.insertAdjacentHTML('beforeend','<td><button class="add sm" aria-label="Add '+t+'">+</button></td>')});
+ let n=0;const cnt=$('count');
+ document.querySelectorAll('.add').forEach(b=>b.addEventListener('click',()=>{n++;cnt.textContent=n;cnt.style.display='grid'}));
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+ document.querySelectorAll('.item,.f,.list,.box,.head,.rev,.loc').forEach(e=>{e.classList.add('rv');io.observe(e)});
+})();
+</script>
+</body>
+</html>
